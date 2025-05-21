@@ -1,0 +1,6 @@
+[submodule "sdks/A2AServer-js"]
+	path = sdks/A2AServer-js
+	url = https://github.com/AgenticDao/A2AServer-js.git
+[submodule "sdks/A2AServer-python"]
+	path = sdks/A2AServer-python
+	url = https://github.com/AgenticDao/A2AServer-python.git

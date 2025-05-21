@@ -1,55 +1,53 @@
 # CryptoA2A Framework
 
-A framework for implementing cryptocurrency and blockchain applications based on Google's Agent-to-Agent (A2A) protocol.
+A standardized protocol framework that combines Google's Agent-to-Agent (A2A) protocol with cryptocurrency verification mechanisms.
 
 ## Overview
 
-CryptoA2A provides a standardized way for crypto agents to communicate and interact with each other using Google's A2A protocol, enabling seamless integration between different blockchain services, wallets, exchanges, and DeFi applications.
+CryptoA2A defines a standardized protocol flow for agent-to-agent interaction in the cryptocurrency space. It enables secure, verified communication between AI agents and blockchain systems, allowing for seamless integration between different crypto services, wallets, exchanges, and DeFi applications.
+
+## What is Google's A2A Protocol?
+
+The Agent-to-Agent (A2A) protocol, developed by Google, enables AI agents to communicate and collaborate effectively with each other. The protocol provides a standardized way for agents to:
+
+- Exchange information and requests
+- Understand each other's capabilities
+- Coordinate complex tasks across different domains
+- Maintain context over multi-turn interactions
+- Execute tasks with proper authorization
+
+For more detailed information about Google's A2A protocol, please refer to the [official A2A repository](https://github.com/google/A2A).
+
+## A2A Server SDKs
+
+This project includes server-side SDKs for implementing A2A protocol in both JavaScript and Python. These SDKs are included as Git submodules in the `sdks` directory:
+
+- **JavaScript SDK**: Located at `sdks/A2AServer-js`
+  - [View JavaScript SDK Documentation](https://github.com/AgenticDao/A2AServer-js/blob/master/README.md)
+
+- **Python SDK**: Located at `sdks/A2AServer-python`
+  - [View Python SDK Documentation](https://github.com/AgenticDao/A2AServer-python/blob/master/README.md)
+
+## Blockchain Integration
+
+CryptoA2A currently integrates with the Solana blockchain for on-chain verification of agent actions and transactions. This integration ensures:
+
+- Cryptographic proof of operations
+- Transaction verification and validation
+- Secure wallet interactions
+- Smart contract execution validation
+
+Future releases will expand support to multiple blockchains, creating a comprehensive cross-chain verification system.
 
 ## Features
 
-- Core A2A protocol implementation for crypto use cases
+- Complete A2A protocol implementation tailored for cryptocurrency use cases
+- On-chain verification mechanisms via Solana blockchain
 - Wallet integration capabilities
 - Transaction handling and verification
 - Smart contract interaction
-- Cross-chain communication support
 - Secure authentication and encryption
-- Extensible plugin architecture
-
-## Project Structure
-
-```
-cryptoa2a/
-├── src/                  # Source code
-│   ├── core/             # Core A2A protocol implementation
-│   ├── crypto/           # Cryptocurrency-specific extensions
-│   ├── security/         # Security components
-│   ├── wallet/           # Wallet integration
-│   └── utils/            # Utility functions
-├── examples/             # Example implementations
-├── docs/                 # Documentation
-├── tests/                # Test suite
-├── config/               # Configuration files
-└── scripts/              # Build and deployment scripts
-```
-
-## Getting Started
-
-Cooming soon
-
-# Clone the repository
-git clone https://github.com/DegenAILabs/CryptoA2A.git
-
-# Install dependencies
-cd cryptoa2a
-npm install
-
-# Run tests
-npm test
-
-# Build the package
-npm run build
-```
+- Extensible plugin architecture for additional blockchains and services
 
 ## Contributing
 
